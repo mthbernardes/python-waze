@@ -65,8 +65,3 @@ class Waze(object):
         traveltime = (str(datetime.timedelta(seconds=traveltime)))
         distance = distance/ 1000
         return traveltime,distance
-
-if __name__ == "__main__":
-    w = Waze()
-    traveltime, distance = w.getTravelTimeAndDistance("Rodoviaria Tiete","Aeroporto de Guarulho")
-    print("You'll travel {} km and will probably spent {} hours on it.".format(distance,traveltime))
